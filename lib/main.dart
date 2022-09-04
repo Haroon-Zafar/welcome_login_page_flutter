@@ -31,11 +31,12 @@ class WelcomeScreen extends StatelessWidget {
       body: Column(
         children: <Widget>[
           Expanded(
-            flex: 3,
+            flex: 6,
             child: Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage("assets/welcomeScreen.jpg"),
+                  fit: BoxFit.cover,
                 ),
               ),
             ),
