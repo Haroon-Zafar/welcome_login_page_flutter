@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:welcome_login_page/constants.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,20 +14,19 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Auth Screen 1',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: kPrimaryColor,
+        scaffoldBackgroundColor: kBackgroundColor,
       ),
-      home: WelcomeScreen(); 
-      );
+      home: WelcomeScreen(),
+    );
   }
 }
 
 class WelcomeScreen extends StatelessWidget {
-  const WelcomeScreen({ Key? key }) : super(key: key);
+  const WelcomeScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
-    );
+    return Container();
   }
 }
