@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Auth Screen 1',
       theme: ThemeData(
+        brightness: Brightness.dark,
         primaryColor: kPrimaryColor,
         scaffoldBackgroundColor: kBackgroundColor,
       ),
@@ -42,7 +43,18 @@ class WelcomeScreen extends StatelessWidget {
             ),
           ),
           Expanded(
-            child: Column(),
+            child: Column(
+              children: <Widget>[
+                RichText(
+                  text: TextSpan(children: [
+                    TextSpan(
+                      text: "Lens which make the Life",
+                      style: Theme.of(context).textTheme.bodyText1,
+                    ),
+                  ]),
+                )
+              ],
+            ),
           ),
         ],
       ),
