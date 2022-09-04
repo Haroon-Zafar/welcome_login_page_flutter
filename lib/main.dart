@@ -17,6 +17,11 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.dark,
         primaryColor: kPrimaryColor,
         scaffoldBackgroundColor: kBackgroundColor,
+        textTheme: TextTheme(
+          subtitle1: TextStyle(
+            color: Colors.white,
+          ),
+        ),
       ),
       home: WelcomeScreen(),
     );
@@ -49,7 +54,9 @@ class WelcomeScreen extends StatelessWidget {
                   text: TextSpan(children: [
                     TextSpan(
                       text: "Lens which make the Life",
-                      style: Theme.of(context).textTheme.bodyText1,
+                      style: Theme.of(context).textTheme.subtitle1!.copyWith(
+                            fontWeight: FontWeight.bold,
+                          ),
                     ),
                   ]),
                 )
