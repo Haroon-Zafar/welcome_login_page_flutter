@@ -35,7 +35,7 @@ class WelcomeScreen extends StatelessWidget {
             child: Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage("assets/bg2.jpeg"),
+                  image: AssetImage("assets/welcomeScreen.jpg"),
                 ),
               ),
             ),
